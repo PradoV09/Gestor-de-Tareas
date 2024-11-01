@@ -1,6 +1,7 @@
 // Task.jsx
 import React from "react";
 import { useReducer, useRef } from "react";
+import "./styles/Task.css"
 
 const Task = () => {
   const inputRefTitle = useRef();
@@ -14,11 +15,13 @@ const Task = () => {
           {
             id: state.length,
             title: action.title,
-            description: action.description
+            description: action.description,
+            start: action.start,
+            end: action.end
           }
         ]}
         case "remove_task": {
-          return state.filter((task, index) => index != action.index);
+          return state.filter((task, index) => index !== action.index);
         }
       default: {
         return state;

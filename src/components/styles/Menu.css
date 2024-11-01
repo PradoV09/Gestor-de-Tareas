@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Barra lateral del menú */
+.sidebar {
+    width: 250px;
+    background-color: #2E7D32;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.username {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #b2dfdb;
+}
+
+.logout {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.logout:hover {
+    color: #b2dfdb;
+}
+
+/* Contenido principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #2E7D32;
+}
+
+.add-task-btn {
+    padding: 10px 20px;
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-task-btn:hover {
+    background-color: #1b5e20;
+}
+
+/* Estilos para secciones individuales */
+.calendar-section, .task-list {
+    margin-top: 30px;
+}
+
+/* Estilos del calendario */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day {
+    padding: 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Lista de tareas */
+.task-list h2 {
+    font-size: 20px;
+    color: #2E7D32;
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

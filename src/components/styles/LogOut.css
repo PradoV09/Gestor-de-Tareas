@@ -1,0 +1,20 @@
+/* LogOut.css */
+
+.logout {
+    margin-top: auto; /* Para que se coloque al final del menú */
+    text-align: center;
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px 0; /* Espaciado vertical */
+    border: none; /* Sin borde */
+    background: none; /* Sin fondo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: color 0.3s ease; /* Suaviza la transición del color del texto */
+    opacity: 0; /* Hace que el botón sea invisible */
+}
+
+.logout:hover {
+    opacity: 1; /* Hace que el texto sea visible al pasar el mouse (opcional) */
+    color: #c62828; /* Cambia el color del texto al pasar el mouse */
+}
